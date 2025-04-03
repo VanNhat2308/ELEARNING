@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+<div class="wrapBigger">
+    <div class="wrapImg">
+       <img class="imgLogin" src="img/login.jpg" alt="">
+       <img class="imgRe" src="img/register.jpg" alt="">
+       <div class="captionBox">
+        <h4 class="captionHeader">Lorem Ipsum is simply </h4>
+        <p class="captionText">Lorem Ipsum is simply </p>
+       </div>
+    </div>
+    <div class="wrapCT">
+    <div class="boxLogin">
+        <h5 class="header h1">Welcome to lorem..!</h5>
+        <div class="wgBtn">
+            <div class="groupBoxBtn">
+                <a onclick="toggleForm('login')" id="loginBtn" class="active">Login</a>
+                <a onclick="toggleForm('register')" id="registerBtn">Register</a>
+            </div>
+        </div>
+        <div class="wrapLogin">
+            <p class="textBox">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+            <label class="header" for="loginUsername">Username</label>
+            <input type="text" id="loginUsername" placeholder="Enter your User name">
+            <label class="header pwd" for="loginPassword">Password</label>
+            <div class="grInput">
+                <input type="password" id="loginPassword" placeholder="Enter your password">
+                <i class="bi bi-eye-slash-fill"></i>
+            </div>
+            <div class="boxOption">
+                <div class="groupCheckBox">
+                    <input type="checkbox" id="loginCheckRemem">
+                    <span>Remember me</span>
+                </div>
+                <a href="">Forgot Password ?</a>
+            </div>
+            <div class="wrapbtnLog"><button class="btnLog">Login</button></div>
+        </div>
+        <div class="wrapRegister">
+            <p class="textBox">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+            <label class="header" for="registerEmail">Email</label>
+            <input type="email" id="registerEmail" placeholder="Enter your Email Address">
+            <label class="header" for="registerUsername">Username</label>
+            <input type="text" id="registerUsername" placeholder="Enter your User name">
+            <label class="header pwd" for="registerPassword">Password</label>
+            <div class="grInput">
+                <input type="password" id="registerPassword" placeholder="Enter your password">
+                <i class="bi bi-eye-slash-fill"></i>
+            </div>
+        
+            <div class="wrapbtnLog"><button class="btnLog">Register</button></div>
+        </div>
+    </div>
+    </div>
+</div>
+<script>
+       function toggleForm(type) {
+        document.getElementsByClassName('wrapLogin')[0].style.display = type === 'login' ? 'block' : 'none';
+        document.getElementsByClassName('wrapRegister')[0].style.display = type === 'register' ? 'block' : 'none';
+        
+        document.getElementsByClassName('imgLogin')[0].style.display = type === 'login' ? 'block' : 'none';
+        document.getElementsByClassName('imgRe')[0].style.display = type === 'register' ? 'block' : 'none';
+
+        document.getElementById('loginBtn').classList.toggle('active', type === 'login');
+        document.getElementById('registerBtn').classList.toggle('active', type === 'register');
+    }
+</script>
+</body>
+</html>
