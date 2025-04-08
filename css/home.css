@@ -202,10 +202,12 @@ border-radius: 50%;
     flex-direction: column;
     align-items: center;
 }
+section{
+    width: 90%;
+}
 /* section success */
 /* Container chính */
 .success {
-    width: 90%;
     text-align: center;
     padding: 40px 0px;
     margin: auto;
@@ -252,12 +254,396 @@ border-radius: 50%;
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .section__2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titleSec2{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .captionSec2{
+    color: #696984;
+    width: 60%;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .titleSec4{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .section__4{
+    margin-top: 100px;
+  }
+  .boxCaptionS4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .captionSec4{
+    color: #696984;
+    width: 80%;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .captionBoxS3{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .card_item{
+    position: relative;
+    margin-right: 25px;
+    text-align: center;
+    padding: 20px;
+    width: 33.33%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(38, 45, 118, 0.4);
+  }
+  .section__3{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+.CardIcon{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: #5B72EEed;
+}
+.CardIcon i{
+    color: white;
+    font-size: 20px;
+}
+.captionBoxS3{
+    padding-top: 70px;
+    height: 100%;
+}
+.captionBoxS3 h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #2F327D;
+    margin-bottom: auto;
+}  
+.captionBoxS3 p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #696984;
+}
+.groupBoxSelect{
+    margin-top: 50px;
+   justify-content: center;
+    display: flex;
+    gap: 60px;
+}
+.groupBoxSelect .box{
+    position: relative;
+    width: 40%;
+    
+}
+.selec{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.selec h4{
+    width: 100%;
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+}
+.selec a{
+    text-decoration: none;
+    padding: 20px 25px;
+    border: 1px solid white;
+    background: transparent;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: white;
+    border-radius: 80px;
+
+
+}
+.groupBoxSelect .box img{
+    filter: brightness(50%);
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.groupTextS4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 40px;
+    max-width: 1200px;
+    margin-top: 50px;
+  }
+  
+  .text-content {
+    flex: 1;
+  }
+  
+  .text-content h2 {
+    font-size: 32px;
+    font-size: 500;
+    color: #2c2c51;
+  }
+  
+  .text-content h2 span {
+    color: #00c9a7; /* màu xanh tương tự trong ảnh */
+  }
+  
+  .text-content p {
+    margin: 10px 0;
+    color: #666;
+    font-size: 22px;
+    font-weight: 400;
+  }
+  
+  .text-content a {
+    color: #696984;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    flex: 1;
+    max-width: 500px;
+    z-index: 0;
+  }
+  
+  .image-wrapper img {
+    width: 100%;
+    border-radius: 16px;
+    display: block;
+  }
+  
+  /* Nút play */
+  .play-buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Các shape decor */
+  .border-shape {
+    position: absolute;
+ 
+    z-index: -1;
+
+    border-radius: 10px;
+  }
+  
+  .top-left {
+    width: 60px;
+    height: 60px;
+    top: -10px;
+    left: -10px;
+    border-right: none;
+    border-bottom: none;
+    background: #23BDEE;
+  }
+  
+  .bottom-right {
+    
+    background-color: #00c9a7;
+    width: 100px;
+    height: 100px;
+    bottom: -10px;
+    right: -10px;
+    border-top: none;
+    border-left: none;
+  }
+  .classroom-ui {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px;
+  }
+  
+  .classroom-ui__video-section {
+    position: relative;
+    flex: 1;
+  }
+  
+  .classroom-ui__browser-frame {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+  }
+  
+  .classroom-ui__video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  .classroom-ui__video-box {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .classroom-ui__video-box img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+  }
+  
+  .classroom-ui__name-label {
+    position: absolute;
+    bottom: 6px;
+    left: 6px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-size: 12px;
+  }
+  
+  .classroom-ui__controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+  
+  .classroom-ui__button {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .classroom-ui__button--present {
+    background: #007bff;
+    color: white;
+  }
+  
+  .classroom-ui__button--call {
+    background: #ff3860;
+    color: white;
+  }
+  
+  .classroom-ui__decor {
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .classroom-ui__decor--green {
+    top: -20px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    background: #00c9a7;
+  }
+  
+  .classroom-ui__decor--red {
+    bottom: -10px;
+    right: -10px;
+    width: 12px;
+    height: 12px;
+    background: red;
+  }
+  
+  .classroom-ui__text-section {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .classroom-ui__title {
+    font-size: 28px;
+    line-height: 1.4;
+    color: #2c2c51;
+  }
+  
+  .classroom-ui__highlight {
+    color: #00c9a7;
+  }
+  
+  .classroom-ui__feature-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+  }
+  
+  .classroom-ui__feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .classroom-ui__feature-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+  }
+  
   
 
-  
 /*  */
 
   @media screen and (max-width: 1024px){
+    .groupTextS4 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-wrapper{
+        max-width: unset;
+    }
+    .groupBoxSelect .box{
+        width: 100%;
+    
+    }
+    .groupBoxSelect{
+     flex-direction: column;
+    }
+    .section__3{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .card_item{
+        width: 100%;
+        margin-right: 0;
+    }
     .stats {
         gap: 15px;
       }
@@ -284,9 +670,34 @@ border-radius: 50%;
     .wrapHead{
         flex-direction: column;
     }
+    .captionSec2{
+        width: 100%;
+    }
+    .card_item{
+        min-height: 300px;
+    }
     
   }
   @media screen and (max-width:767px){
+    .captionBoxS3 h2{
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+    .captionBoxS3 p{
+        font-size: 16px;
+    }
+    .titleSec2{
+        font-size: 28px;
+    }
+    .captionSec2{
+        font-size: 14px;
+    }
+    .titleSec4{
+        font-size: 28px;
+    }
+    .captionSec4{
+        font-size: 14px;
+    }
     header{
         height: auto;
         padding-bottom: 30px;
@@ -296,7 +707,7 @@ border-radius: 50%;
       
     }
     .title-txtItem{
-        font-size: 24px;
+        font-size: 28px;
     }
     .cap-textItem{
         font-size: 14px;
@@ -308,7 +719,7 @@ border-radius: 50%;
         font-size: 12px;
     }
     .success h2{
-        font-size: 24px;
+        font-size: 28px;
     }
     .success p{
         font-size: 14px;
