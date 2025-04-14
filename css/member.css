@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section{
+    width: 90%;
+}
+.sec1Title{
+    margin-top: 20px;
+    font-size: 64px;
+    font-weight: 800;
+    color: #49BBBD;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.wrapPrice{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+
+}
+
+.namePrice{
+    font-size: 18px;
+    font-weight: 700;
+    color: #49BBBD;
+}
+.endow{
+    margin: 25px 0;
+    font-family: Inter,sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+.endow span{
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+
+}
+.benefit{
+    list-style: none;
+
+}
+.benefit li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  
+}
+
+.benefit li .listStyle{
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #e3e3e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.benefit li .listStyle img{
+    width: 15px;
+}
+.wrapPrice .CardItem{
+    min-height: 536px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+.wrapPrice .CardItem:nth-child(2){
+    margin: 0 20px;
+}
+.btnNavigate{
+    display: inline-block;
+    width: 100%;
+    padding: 15px 0;
+    color: rgba(73, 187, 189, 1);
+    border: 1px solid rgba(173, 173, 173, 1);
+    border-radius: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: auto;
+}
+.wrapCardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.wrapCardHeader a{
+    text-transform: uppercase;
+    font-family: Inter,sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 99px;
+    border: 1px solid rgba(108, 92, 231, 1);
+}
+.sdItem .listStyle{
+    background: #fcca6d !important;
+}
+.sdItem .btnNavigate{
+    background: rgba(73, 187, 189, 1);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.25;
+    color: white;
+}
+.sdItem{
+    box-shadow: 0px 16px 24px 0px rgba(38, 50, 56, 0.08), 0 8px 8px 0 rgba(38, 50, 56, 0.12);
+    border-radius: 16px;
+
+}
+.thrItem .listStyle{
+background: #adf7e4 !important;
+}
