@@ -123,3 +123,334 @@ section{
 .thrItem .listStyle{
 background: #adf7e4 !important;
 }
+.section__2{
+    margin-top: 100px;
+    padding: 50px 100px;
+    background: rgba(37, 38, 65, 1);
+    border-radius: 37px;
+}
+.sec2Title{
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sec2Caption{
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.btnStartS2{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color:white;
+    padding: 15px 25px;
+    background: rgba(73, 187, 189, 1);
+    border-radius: 12px;
+}
+.wrapBtnSec2{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.section__3{
+    margin-top: 50px;
+}
+.titleS3{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    color: rgba(45, 52, 54, 1);
+
+}
+.BoxQuestion{
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(105, 105, 132, 1);
+}
+
+.question{
+    position: relative;
+    font-family: Inter,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+
+
+}
+.answer{
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 40px;
+    color: rgba(105, 105, 132, 1);
+    display: none;
+}
+
+.question img{
+    cursor: pointer;
+    width: 15px;
+}
+.box-green{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #adf7e4;
+    border-radius: 50%;
+}
+.btnDrop{
+    transform: rotate(360deg);
+}
+.btnDrop.active{
+    transform: rotate(180deg);
+}
+.answer.active{
+    display: block;
+}
+.section__4{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 50px;
+    background: rgba(157, 204, 255, 1);
+}
+.titles4{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 50px;
+
+}
+.wrapCtS4{
+    width: 90%;
+}
+
+.swiper-slide{
+    border-radius: 20px;
+    padding: 40px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    background: #ffff;
+}
+.imgSlide{
+    width: 35%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    overflow: hidden;
+    background: rgba(217, 217, 217, 1);
+    border-radius: 6px;
+}
+.imgSlide img{
+    width: 100%;
+    height: auto;
+}
+.titleSlide{
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.captionSlide{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(105, 105, 132, 1);
+    text-align: center;
+
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 50px !important;
+  height:50px !important;
+  background-color: #49BBBD;
+  border-radius: 50%;       
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20 !important;
+  cursor: pointer;
+}
+
+/* Tùy chỉnh ảnh bên trong nếu cần */
+.swiper-button-prev img,
+.swiper-button-next img {
+  width: 20px;     /* Tuỳ ý */
+  height: 20px;
+  object-fit: contain;
+}
+
+.swiper-button-next img,
+.swiper-button-prev img{
+width: 10px;
+
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+
+
+
+
+}
+.boxDesS4{
+    padding: 50px;
+    border-radius: 37px;
+    background: rgba(37, 38, 65, 1);
+    display: flex;
+    transform: translateY(50%);
+
+}
+.BoxTitleS4{
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+    margin-right: auto;
+}
+.boxDesS4 a img{
+    width: 34px;
+    margin-right: 10px;
+}
+.boxDesS4 a {
+    display: inline-block;
+    width: 260px;
+    text-align: center;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    background: rgba(41, 185, 231, 1);
+    padding: 15px 30px;
+    border-radius: 12px;
+
+}
+.boxDesS4 a:last-child{
+    background: rgba(73, 187, 189, 1);
+}
+.section__5{
+    padding: 150px 0;
+    display: flex;
+    gap: 50px;
+
+}
+.section__5 .card-item{
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 0 18.83px 47.83px 0 rgba(47, 50, 125, 0.1);
+    
+
+}
+.section__5 .card-item img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.section__5 .card-item h4{
+    font-size: 26px;
+    font-weight: 500;
+    color: rgba(37, 38, 65, 1);
+    margin-bottom: 10px;
+
+}
+.section__5 .card-item .captionCardItem{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(105, 105, 132, 1);
+}
+.wrapCardBtn{
+    margin-top: 50px;
+    display: flex;
+    justify-content: end;
+}
+.section__5 .card-item a{
+    text-decoration: none;
+    background: #49BBBD;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 30px;
+    border-radius: 12px;
+}
+
+@media screen and (max-width:1024px){
+    .boxDesS4 a {
+        width: auto;
+    }
+    .wrapPrice{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .boxDesS4{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .section__5{
+        flex-direction: column;
+        padding-top: 200px;
+    }
+   
+
+
+
+}
+@media screen and (max-width:769px) {
+    .sec1Title{
+        font-size: 36px;
+    }
+    .section__2{
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .sec2Title{
+        font-size: 32px;
+    }
+    .sec2Caption{
+        font-size: 20px;
+    }
+    .wrapPrice .CardItem{
+        box-shadow: 0px 16px 24px 0px rgba(38, 50, 56, 0.08), 0 8px 8px 0 rgba(38, 50, 56, 0.12);
+        border-radius: 16px;
+        margin: 0 !important;
+    }
+    .titleS3{
+        font-size: 32px;
+    }
+    .btnStartS2{
+        font-size: 16px;
+    }
+    .titles4{
+        font-size: 30px;
+    }
+    .BoxTitleS4{
+        font-size: 28px;
+    }
+    .boxDesS4{
+        padding: 20px;
+        border-radius: 10px;
+
+    }
+    .boxDesS4 a{
+        width: 100%;
+    }
+    .section__5 .card-item{
+        border-radius: 10px;
+    }
+    .wrapCardBtn{
+        justify-content: center;
+    }
+    .section__5 .card-item img{
+        border-radius: 10px;
+    }
+
+    
+}

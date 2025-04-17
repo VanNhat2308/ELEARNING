@@ -49,17 +49,8 @@ header{
     width: 21px;
     cursor: pointer;
 }
-.wrapAva{
-    width: 53px;
-    height: 53px;
-    border-radius: 50%;
-    background: #D9D9D9;
-    overflow: hidden;
 
-}
-.nameAva{
-    margin: 0 5px;
-}
+
 footer{
     padding-top: 50px;
     padding-bottom: 30px;
@@ -148,6 +139,17 @@ footer{
     font-size: 22px;
     font-weight: 400;
     color: #B2B3CF;
+}
+header .wrapAva{
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    overflow: hidden;
+
+}
+header .nameAva{
+    margin: 0 10px;
 }
 
 @media screen and (max-width:1024px){
