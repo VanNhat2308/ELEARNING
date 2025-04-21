@@ -1,0 +1,310 @@
+.imgHeader {
+    height: 65vh;
+    background-image: url('../img/bannerCourseDetails.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  .boxContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section{
+    width: 90%;
+  }
+  .headerCt{
+    font-size: 38px;
+    font-weight: 600;
+    color: rgba(47, 50, 125, 1);
+  }
+  .section__1 p{
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(105, 105, 132, 1);
+    margin: 20px 0;
+  }
+  .recommend{
+    display: flex;
+    gap: 20px;
+  }
+  .recommend span{
+    padding: 10px 30px;
+    border-radius: 36px;
+    background: rgba(73, 187, 189, 0.1);
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(105, 105, 132, 1);
+  }
+  .hrz{
+   margin: 20px 0;
+   background: rgba(105, 105, 132, 1);
+   height: 0.5px;
+  }
+  .creater{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .avatar{
+    width: 77px;
+    height: 77px;
+    background: rgba(217, 217, 217, 1);
+    border-radius: 6px;
+  }
+  .avatar img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  .creater .infoCreate h6{
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(105, 105, 132, 1);
+
+  }
+  .creater .infoCreate h5{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 1);
+
+  }
+  .FollowBtn{
+    padding: 10px 70px;
+    border-radius: 10px;
+    border: 1px solid rgba(73, 187, 189, 1);
+    color: rgba(73, 187, 189, 1);
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .written{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .section__2{
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    background: #ebf5ff;
+    margin-top: 50px;
+    
+}
+.wrapItemS3{
+
+    position: relative;
+    width: 90%;
+}
+.headerS3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.headerS3 a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #49BBBD;
+}
+.titleS3{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.swiper {
+    width: 100%;
+
+  }
+  .swiper-slide{
+    padding: 25px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px #2F327D1A;
+  }
+  .imgSlide{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+
+  }
+  .titleSlide{
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .wrapLogoSlide{
+    display: flex;
+    align-items: center;
+  }
+  .slideCaption{
+    font-size: 20px;
+    font-weight: 400;
+    color: #696984;
+  }
+  .infoSlide{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .groupInfoSlide img{
+    width: 25px;
+
+  }
+  .infoSlide a{
+    font-size: 20px;
+    font-weight: 400;
+    color: #696984;
+    
+
+  }
+  .groupInfoSlide span{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #696984;
+  }
+  .custom-swiper-buttons{
+  margin-top: 50px;
+  display: flex;
+  justify-content: end;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: static !important; /* Gỡ vị trí tuyệt đối mặc định của Swiper */
+    width: 50px !important;
+    height: 50px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .swiper-button-prev{
+    margin-right: 10px;
+    background: #49BBBD80;
+  }
+  .swiper-button-next{
+    background: #49BBBD;
+  }
+  .swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none; 
+}
+.swiper-button-prev img,
+.swiper-button-next img{
+    width: 12px;
+}
+.category{
+    display: flex;
+    align-items: center;
+}
+.category img{
+    width: 21px;
+    margin-right: 5px;
+}
+.duration{
+    display: flex;
+    align-items: center;
+}
+.duration img{
+    margin-right: 5px;
+    width: 24px;
+}
+.groupInfoS4{
+    color: #696984;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+.titleCardS4{
+    margin-top: 20px;
+    color: #252641;
+    font-size: 20px;
+    font-weight: 500;
+}
+.captionS4{
+    font-size: 14px;
+    font-weight: 400;
+    color: #696984;
+    margin: 10px 0;
+
+}
+.price span:first-child{
+    text-decoration: line-through;
+    font-style: italic;
+    color: #696984;
+    font-size: 18px;
+    font-weight: 300;
+    margin-right: 10px;
+}
+.price span:last-child{
+    font-size: 24px;
+    font-weight: 700;
+    color: #49BBBD;
+}
+.wrapPrice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.wrapPrice .wrapAva{
+    width: 43px;
+    height: 43px;
+}
+.wrapAva{
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    overflow: hidden;
+
+}
+.nameAva{
+    margin-left: 10px;
+}
+  
+@media screen and (max-width:768px){
+    .recommend{
+        flex-direction: column;
+    }
+    .imgSlide{
+        border-radius: 10px;
+    }
+    .swiper-slide{
+        border-radius: 10px;
+    }
+    .titleSlide{
+        font-size: 20px;
+    }
+    .slideCaption{
+        font-size: 16px;
+    }
+    .infoSlide a{
+        font-size: 16px;
+    }
+    .groupInfoSlide span{
+        font-size: 16px;
+    }
+    .groupInfoSlide{
+        display: flex;
+        align-items: center;
+    }
+
+    
+}
+@media screen and (max-width:405px){
+    .written{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+}

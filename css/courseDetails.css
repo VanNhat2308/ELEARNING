@@ -107,7 +107,7 @@ section{
 }
 .progress span{
     margin-right: 20px;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
 }
@@ -410,7 +410,6 @@ section{
   
   .text-content h2 {
     font-size: 32px;
-    font-size: 500;
     color: #2c2c51;
   }
   
@@ -572,4 +571,137 @@ section{
     background: rgba(0, 0, 0, 0.5); /* màu đen với độ mờ */
     z-index: 1;
     border-radius: 20px;
+  }
+  @media screen and (max-width:1024px) {
+    .wrapSmallImg{
+        display: none;
+    }
+    .section__1{
+        flex-direction: column-reverse;
+    }
+    .groupPrice{
+        justify-content: unset;
+        gap: 10px;
+    }
+    .boxPricing{
+        width: 100%;
+        padding: 0;
+    }
+    .overviews{
+        width: 100%;
+    }
+    .group-rating{
+        gap: 20px;
+        flex-direction: column;
+    }
+    .groupProgress{
+align-items: unset;
+    }
+    .progress span{
+        margin-right: auto;
+    }
+    .progressBar{
+        width:80%;
+    }
+    .wrapItemS4{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .cardItemS4-course{
+        width: 100%;
+    }
+    .groupTextS4{
+        flex-direction: column;
+    }
+    .text-content{
+        width: 100%;
+    }
+    .image-wrapper{
+        width: 100%;
+    }
+    .groupBox-s4{
+        gap: 20px;
+        flex-direction: column;
+    }
+    .groupBox-s4 .box{
+        width: 100%;
+    }
+    .titleS3{
+        font-size: 25px;
+    }
+
+
+    
+  }
+  @media screen and (max-width:767px) {
+        .headerS3{
+        flex-direction: column;
+        align-items: start;
+    }
+    
+  }
+  @media screen and (max-width:731px){
+    .overviewBtn{
+        font-size: 14px;
+    } 
+    .group-overviewBtn{
+        gap: 10px;
+        flex-direction: column;
+    }
+    .progressBar{
+        min-width: unset;
+    }
+    .progress span{
+        font-size: 14px;
+    }
+    .boxOverview{
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .box-rating{
+        border-radius: 10px;
+    }
+    .imgHeaderS4{
+        border-radius: 10px;
+    }
+    .cardItemS4-course{
+        border-radius: 10px;
+    }
+    .commentIf{
+        font-size: 14px;
+    }
+    .boxStar-month .star{
+        width: 100px;
+    }
+    .groupMonth .timer{
+        width: 20px;
+    }
+    .ctBox .captionBox{
+        font-size: 18px;
+    }
+    .ctBox .forBox{
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .text-content p{
+        font-size: 18px;
+    }
+    .text-content h2{
+        font-size: 30px;
+    }
+    .groupBox-s4 .box img{
+        min-height: unset;
+    }
+    .ctBox .saleBox{
+        padding: 10px;
+    }
+  }
+  @media screen and (max-width:400px){
+    .ctBox .captionBox{
+        font-size: 14px;
+    }
+    .ctBox .forBox{
+        font-size: 23px;
+        margin-bottom: 0;
+    }
   }

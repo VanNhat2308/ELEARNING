@@ -1,0 +1,297 @@
+body{
+    display: flex;
+    position: relative;
+}
+.wrapNavigate{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapNavigate button{
+    display: none;
+    font-size: 30px;
+    border: none;
+    background: inherit;
+    cursor: pointer;
+}
+.options{
+    width: 35%;
+    padding: 20px;
+}
+.mainBox{
+    width: 70%;
+    overflow-y: hidden;
+}
+.box-rtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    width: 50px;
+    height: 50px;
+    background: rgba(73, 187, 189, 1);
+}
+.box-rtn i{
+    color: white;
+}
+.optionTit{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgba(37, 38, 65, 1);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.listLession{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.lession{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(157, 204, 255, 0.3);;
+
+}
+.lession.active{
+    background: rgba(73, 187, 189, 1);
+}
+.lession i{
+    color: black;
+    margin-right: 10px;
+    font-size: 20px;
+    
+}
+.lession.active i{
+    color: white;
+
+}
+.lession.active .nameLession{
+    color: white;
+}
+.lession .nameLession{
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
+.lession .duration{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(37, 38, 65, 1);
+    margin-left: auto;
+ 
+}
+.lession.active .nameLession,
+.lession.active .duration,
+.lession.active i {
+  color: #fff;
+}
+
+.boxHeader{
+    padding: 40px;
+    background: rgba(73, 187, 189, 1);
+    display: flex;
+    align-items: start;
+}
+
+
+.boxHeader button{
+    display: none;
+    margin-right: 10px;
+    margin-top: 12px;
+    font-size: 30px;
+    border: none;
+    background: inherit;
+    cursor: pointer;
+    color: white;
+}
+.captionHead{
+    display: flex;
+    justify-content: space-between;
+}
+.wraphead{
+    flex:1;
+}
+.durationBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.durationBox img{
+    width: 24px;
+}
+.wraphead h1{
+    font-size: 38px;
+    font-weight: 400;
+    color: white;
+}
+.captionHead span{
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+.mainCt{
+    padding: 20px;
+    background: #ebf5ff;
+    height: 100%;
+}
+.description h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgba(37, 38, 65, 1);
+    margin: 20px 0;
+}
+.description p{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(105, 105, 132, 1);
+}
+.form-container {
+    margin-top: 50px;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .event-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(91, 91, 91, 1);
+  }
+  
+  input,
+  select,
+  textarea {
+    margin-top: 8px;
+    padding: 15px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 18px;
+    color: rgba(91, 91, 91, 1);
+    font-weight: 400;
+  }
+  
+  textarea {
+    min-height: 260px;
+    resize: vertical;
+  }
+  
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .submit-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .submit-wrapper  button {
+    background: #36c2c7;
+    color: white;
+    border: none;
+    padding: 12px 60px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .submit-wrapper  button:hover {
+    background: #2db5b9;
+  }
+
+  @media (max-width: 768px) {
+    .lession{
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .lession i{
+        font-size: 10px;
+    }
+    .optionTit{
+        font-size: 16px;
+    }
+    .lession .nameLession{
+        font-size: 10px;
+    }
+    .lession .duration{
+        font-size: 10px;
+    }
+    label{
+        font-size: 18px;
+    }
+    .submit-wrapper button{
+        font-size: 14px;
+        border-radius: 7px;
+    }
+    .form-container{
+        border-radius: 10px;
+    }
+    input, select, textarea{
+        font-size: 14px;
+    }
+    .description h2{
+        font-size: 24px;
+    }
+
+    .description p{
+        font-size: 16px;
+    }
+    .boxHeader button{
+        margin-top: 5px;
+    }
+    .durationBox img{
+        width: 16px;
+    }
+    .boxHeader{
+        padding: 20px;
+    }
+    .wraphead h1{
+        font-size: 25px;
+    }
+    .captionHead span{
+        font-size: 14px;
+    }
+    .grid-2 {
+      grid-template-columns: 1fr;
+    }
+  
+    .submit-wrapper {
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width:1024px){
+    .wrapNavigate button{
+        display: block;
+    }
+    
+.boxHeader button{
+    display: block;
+}
+    .options{
+        display: none;
+        background: #ebf5ff;
+        height: 100vh;
+        width: 75%;
+        overflow-y: scroll;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .mainBox{
+        width: 100%;
+    }
+    
+  }
