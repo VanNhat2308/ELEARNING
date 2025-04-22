@@ -46,7 +46,7 @@ section{
     padding: 20px;
     border-radius: 20px;
     background: #FFFFFF;
-    box-shadow: 0px 4px 10px #2F327D1A;
+    box-shadow: 0px 18px 47px 0 #2F327D1A;
   }
   .imgSlide{
     width: 100%;
@@ -356,6 +356,7 @@ section{
   }
   
   @media (max-width: 768px) {
+  
     .services-grid {
       grid-template-columns: 1fr;
     }

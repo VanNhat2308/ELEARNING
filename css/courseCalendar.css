@@ -17,8 +17,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 80px;
+  }
+  .month-header span{
+    font-size: 20px;
+    font-weight: 600;
   }
   
   .calendar-grid {
@@ -28,6 +31,8 @@
   }
   
   .calendar-grid div {
+    font-size: 18px;
+    font-weight: 600;
     aspect-ratio: 1 / 1;
     display: flex;
     align-items: center;
@@ -44,8 +49,11 @@
   }
   
   .day-header {
-    font-weight: bold;
+    text-align: center;
     margin-bottom: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(37, 38, 65, 1);
   }
   
   .time-slots {
@@ -68,21 +76,52 @@
     color: #888;
   }
   
-  .event {
-    background: #f8c0c0;
-    padding: 5px 10px;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    color: #b94e4e;
-  }
+ 
   .prev,.next{
     background: inherit;
     border: none;
   }
+  .time-slot{
+    display: flex;
+    align-items: center;
+  }
+  .border-side{
+    flex: 1;
+    height: 0.3px;
+    background: #a1a1b3;
+    margin-left: 15px;
+  }
+  .wrapEvent{
+    display: flex;
+  }
+  .wrapEvent .cusion{
+    width: 37px;
+  }
+  .event {
   
+    flex: 1;
+    margin-left: 15px;
+    background: rgba(238, 100, 91, 0.3);
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(238, 100, 91, 1);
+  }
+  .event.null{
+    min-height: 45px;
+    background: white;
+  }
+  .timeLable{
+    font-size: 14px;
+    font-weight: 600;
+    color: #696984;
+  }
+
   @media (max-width: 768px) {
     .calendar-wrapper {
       grid-template-columns: 1fr;
+      border-radius: 10px;
     }
   
     .calendar-detail {
