@@ -1,4 +1,40 @@
+
+.side-bar.hidden{
+  display: none;
+}
+
+.nav-bar ul li a {
+  color: white;
+}
+.loginBtn{
+  padding: 8px 30px;
+  border-radius: 80px;
+  color: rgba(91, 91, 91, 1);
+  font-size: 22px;
+  font-weight: 500;
+  background: white;
+  box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.03);
+
+  
+}
+.navs li:not(:first-child) {
+  margin-left: 40px;
+}
+.navs li:last-child{
+  margin-left: 20px;
+}
+.RegisterBtn{
+  padding: 8px 30px;
+  border-radius: 80px;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  background: #80cdcf;
+  box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.03);
+}
+
 header{
+  margin-top: 0;
     height: 100vh;
     background: var(--primary-color);
     display: flex;
@@ -40,7 +76,7 @@ header{
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
-    height: 65%;
+    height: 60%;
 }
 .info-box {
     display: flex;
@@ -286,6 +322,26 @@ section{
   .section__4{
     margin-top: 100px;
   }
+  .greenBox-1 {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+    background: rgba(51, 239, 160, 1);
+    z-index: -1;
+}
+.greenBox-2 {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(51, 239, 160, 1);
+  z-index: -1;
+}
   .boxCaptionS4{
     display: flex;
     flex-direction: column;
@@ -318,6 +374,11 @@ section{
     justify-content: center;
   }
 .CardIcon{
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 50%;
@@ -328,7 +389,7 @@ section{
 }
 .CardIcon i{
     color: white;
-    font-size: 20px;
+    font-size: 30px;
 }
 .captionBoxS3{
     padding-top: 70px;
@@ -349,7 +410,7 @@ section{
     margin-top: 50px;
    justify-content: center;
     display: flex;
-    gap: 60px;
+    gap: 20px;
 }
 .groupBoxSelect .box{
     position: relative;
@@ -402,13 +463,14 @@ section{
   }
   
   .text-content {
+    position: relative;
     width: 45%;
     flex: 1;
   }
   
   .text-content h2 {
     font-size: 32px;
-    font-size: 500;
+    /* font-weight: 500; */
     color: #2c2c51;
   }
   
@@ -452,14 +514,18 @@ section{
     transform: translate(-50%, -50%);
     font-size: 40px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: white;
     width: 64px;
     height: 64px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+    cursor: pointer;
+}
+.play-buttons i {
+  color: #23BDEE;
+}
   
   /* Các shape decor */
   .border-shape {
@@ -471,25 +537,23 @@ section{
   }
   
   .top-left {
-    width: 60px;
-    height: 60px;
-    top: -10px;
-    left: -10px;
+    width: 138px;
+    height: 138px;
+    top: -15px;
+    left: -15px;
     border-right: none;
     border-bottom: none;
     background: #23BDEE;
-  }
-  
-  .bottom-right {
-    
-    background-color: #00c9a7;
-    width: 100px;
-    height: 100px;
-    bottom: -10px;
-    right: -10px;
-    border-top: none;
-    border-left: none;
-  }
+}
+.bottom-right {
+  background-color: #00c9a7;
+  width: 231px;
+  height: 231px;
+  bottom: -15px;
+  right: -15px;
+  border-top: none;
+  border-left: none;
+}
  .classroom-ui{
   margin-top: 100px;
   display: flex;
@@ -708,7 +772,7 @@ section{
   z-index: -1;
 }
 .classroom-ui__heading {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   color: rgba(47, 50, 125, 1);
 }
@@ -750,7 +814,7 @@ section{
 
 .feature__text {
   color: #555;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -863,6 +927,7 @@ section{
 .section__7{
   display: flex;
 justify-content: space-between;
+align-items: center;
 margin-top: 50px;
 }
 .section__7 .boxImgS7{
@@ -1020,7 +1085,10 @@ margin-top: 50px;
   left: -5%;
 }
 .section__8{
-  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
 }
 .textWrapperS8{
   width: 40%;
@@ -1036,10 +1104,126 @@ margin-top: 50px;
   font-weight: 400;
   color: #696984;
 }
+.wrapperImgS8{
+  width: 55%;
+}
+.wrapperImgS8 img{
+  width: 100%;
+  height: auto;
+}
+.section__9{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapperImgS9{
+  width: 55%;
+}
+.wrapperImgS9 img{
+  width: 100%;
+  height: auto;
+}
+.wrapTextS9{
+  width: 40%;
+}
+.wrapTextS9 h2{
+  font-size: 40px;
+  font-weight: 600;
+  color: #2F327D;
 
-/*  */
+}
+.wrapTextS9 p{
+  font-size: 22px;
+  font-weight: 400;
+  color: #696984;
+}
+.seeMore{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+.seeMore a{
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px 30px;
+  color: rgba(73, 187, 189, 1);
+  border-radius: 80px;
+  border: 1px solid rgba(73, 187, 189, 1);
+}
+@media screen and (max-width:840px){
+  .arrowGroup {
+    display: none;
+  }
+  .section__7 .boxImgS7 .cardImgS7{
+    width: 100%;
+  }
+  .eclipRS7{
+    right: -6%;
+  }
+  .eclipGS7{
+    bottom: -5%;
+  }
+  
+}
 
   @media screen and (max-width: 1024px){
+  
+    .section__8{
+      flex-direction: column;
+      gap: 20px;
+    }
+    .section__9{
+      flex-direction: column-reverse;
+      gap: 20px;
+    }
+    .section__9 .wrapTextS9{
+      width: 100%;
+    }
+    .wrapperImgS9{
+      width: 100%;
+    }
+    .section__8 .textWrapperS8{
+      width: 100%;
+    }
+    .wrapperImgS8{
+      width: 100%;
+    }
+    .section__7 .textWrapper{
+      margin-top: 50px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    .section__7 .boxImgS7{
+      width: 65%;
+    }
+    .section__7{
+      gap: 50px;
+      flex-direction: column-reverse;
+      align-items: center;
+
+    }
+    .section__6{
+      flex-direction: column;
+
+    }
+    .textS6{
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .imgS6{
+      width: 60%;
+    }
+
+    .text-content{
+      width: 100%;
+    }
+    .groupTextS4 .image-wrapper{
+      width: 100%;
+    }
     .groupTextS4 {
         flex-direction: column;
         align-items: center;
@@ -1056,7 +1240,7 @@ margin-top: 50px;
     }
     .section__3{
         flex-direction: column;
-        gap: 50px;
+        gap: 100px;
     }
     .card_item{
         width: 100%;
@@ -1082,9 +1266,7 @@ margin-top: 50px;
     .textItem{
         width: 100%;
     }
-    .imgItem{
-        width: 100%;
-    }
+   
     .wrapHead{
         flex-direction: column;
     }
@@ -1094,29 +1276,101 @@ margin-top: 50px;
     .card_item{
         min-height: 300px;
     }
-    /* .Box2{
-      display: none;
-    }
-    .groupImgBox1{
-      width: 20%;
-    } */
+
     .classroom-ui{
+
       flex-direction: column;
     }
     .call-ui{
-      display: none;
-      /* width: 100%; */
+      width: 100%;
     }
     .text-ui{
-      width: 100%;
-      margin-top: 100px;
+      width: 100% !important;
+      margin-top: 50px;
     }
-     .wrapperImg{
+    .groupImgBox1 .imgBox1{
+      width: 200px;
+    }
+    .wrapperImg{
+      max-height: unset;
+    }
+    .boxP{
+      width: 100px;
+      height: 100px;
+      right: 2%;
+    }
+    
+    
+  }
+  @media screen and (max-width:646px){
+    
+    
+    .call-ui{
+      min-width: unset !important;
+    }
+    .groupImg{
       display: none;
-     }
+    }
+    .imgButton{
+      width: 100%;
+    }
+   
     
   }
   @media screen and (max-width:767px){
+    .textWrapperS8 h2{
+      font-size: 25px;
+    }
+    .textWrapperS8 p{
+      font-size: 18px;
+    }
+    .wrapTextS9 h2{
+      font-size: 25px;
+    }
+    .wrapTextS9 p{
+      font-size: 18px;
+    }
+    .aroundImg{
+      display: none;
+    }
+    .groupTextS4{
+      padding: 0;
+    }
+    .section__7 .textWrapper h2{
+      font-size: 26px;
+    }
+    .section__7 .textWrapper p{
+      font-size: 20px;
+    }
+    .eclipBack{
+      width: 200px;
+      height: 200px;
+    }
+    .imgS6{
+      width: 70%;
+    }
+    .textS6 h2{
+      font-size: 26px;
+    }
+    .textS6 p{
+      font-size: 20px;
+    }
+
+    .imgItem{
+      min-width: unset;
+    }
+    .section__5{
+      margin-top: 50px;
+    }
+    .imgItem{
+      height: 60vh;
+    }
+    .boxO{
+      display: none;
+    }
+    .boxP{
+      display: none;
+     }
     .captionBoxS3 h2{
         font-size: 28px;
         padding-bottom: 10px;
@@ -1134,21 +1388,17 @@ margin-top: 50px;
         font-size: 28px;
     }
     .captionSec4{
-        font-size: 14px;
+        font-size: 16px;
     }
     header{
         height: auto;
-        padding-bottom: 30px;
     }
-    .imgItem{
-        display: none;
-      
-    }
+   
     .title-txtItem{
-        font-size: 28px;
+        font-size: 38px;
     }
     .cap-textItem{
-        font-size: 14px;
+        font-size: 18px;
     }
     .joinFree{
         font-size: 12px;
@@ -1170,6 +1420,93 @@ margin-top: 50px;
     .stat {
       width: 80%;
     }
+    .bottom-right{
+      width: 120px;
+      height: 120px;
+    }
+    .top-left{
+      width: 80px;
+      height: 80px;
+    }
+    
+   
 
     
+  }
+  @media screen and (max-width: 1184px){
+    .text-ui{
+      width: 35%;
+    }
+   .Box2{
+      display: none;
+    }
+    .call-ui{
+      min-width: 527px;
+    }
+    
+  }
+  @media screen and (max-width:456px){
+    .classroom-ui__heading{
+      font-size: 23px;
+    }
+    .section__7 .boxImgS7 .titleQuest{
+      font-size: 16px;
+    }
+    .logoS7 img{
+      width: 100px;
+      height: 100px;
+    }
+    .successImg{
+    
+      top: -10%;
+      right: 10%;
+    }
+    .cancelImg{
+      top: -5%;
+      right: -2%;
+
+    }
+    .section__7 .boxImgS7 .captionS7{
+      font-size: 20px;
+    }
+    .eclipPS7, .eclipOS7, .eclipRS7, .eclipGS7{
+      display: none;
+    }
+    .section__7 .boxImgS7{
+      width: 100%;
+      padding: 10px;
+    }
+    .boxB{
+      left: 50%;
+    }
+    .imgButton{
+      margin-right: 0;
+      padding-right:40px;
+    }
+   
+    .text-content h2{
+      font-size: 26px;
+    }
+    .text-content p{
+      font-size: 20px;
+    }
+    .selec h4{
+      font-size: 24px;
+    }
+    .selec a{
+      font-size: 16px;
+    }
+    .card_item{
+      border-radius: 10px;
+    }
+    .play-button{
+      margin: 0;
+    }
+    .groupBtn{
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .imgItem .Banner{
+      max-width: 340px;
+    }
   }
