@@ -1,10 +1,13 @@
-const cards = document.querySelectorAll('.section10-card');
+const cardGroups = document.querySelectorAll('.section10-cards');
 
-cards.forEach(card => {
-  card.addEventListener('click', () => {
-    // Remove active from all
-    cards.forEach(c => c.classList.remove('active'));
-    // Add active to clicked
-    card.classList.add('active');
+cardGroups.forEach(group => {
+  const cards = group.querySelectorAll('.section10-card');
+  
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      // Chỉ xóa 'active' trong nhóm hiện tại
+      cards.forEach(c => c.classList.remove('active'));
+      card.classList.add('active');
+    });
   });
 });

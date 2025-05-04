@@ -1225,6 +1225,7 @@ font-size: 30px;
 color: #00BCD4;
 }
 .section10-container {
+  margin-top: 50px;
   position: relative;
 }
 .section10-container .bg-bottom{
@@ -1249,9 +1250,10 @@ color: #00BCD4;
 }
 
 .section10-card {
+  cursor: pointer;
   flex: 1;
-  height: 418px;
-  border-radius: 16px;
+  height: 328px;
+  border-radius: 24px;
   background: #fff;
   display: flex;
   justify-content: center;
@@ -1259,19 +1261,27 @@ color: #00BCD4;
   transform: rotate(-10.08deg);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
-
+.wrap-card-inner{
+  border-radius: 24px;
+  height: 90%;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #cbfabb;
+}
 .section10-card-inner {
+  border-radius: 24px;
   writing-mode: vertical-rl;
   text-align: center;
   padding: 10px;
   color: #fff;
   font-weight: bold;
   border-radius: 12px;
-  height: 140px;
-  width: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 80%;
 }
 
 /* Màu riêng từng thẻ */
@@ -1282,31 +1292,41 @@ color: #00BCD4;
 .section10-card-inner.purple { background: #b5aafc; }
 .section10-card-inner.blue { background: #00aaff; }
 .section10-card-inner.green { background: #6d9d7a; }
-
+.wrapS10Details{
+  display: none;
+}
 .section10-detail {
   width: 450px;
+  display: flex;
+  gap: 15px;
   background: white;
   border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding:0 20px;
 }
 
 .section10-detail img {
-  width: 100%;
+  width: 50%;
+  object-fit: cover;
   border-radius: 12px;
 }
 
 .section10-detail h3 {
   margin: 15px 0 5px;
+  font-size: 20px;
 }
 
 .section10-detail p {
   color: #666;
   margin-bottom: 10px;
+  font-size: 16px;
 }
-
+.section10-stars i{
+  color: #ffc108;
+}
 .section10-stars {
-  color: #f8b400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 5px;
 }
 
@@ -1320,12 +1340,19 @@ color: #00BCD4;
   display: block;
   margin-top: 20px;
   padding: 8px 20px;
-  border: 1px solid #00aaff;
-  border-radius: 20px;
-  color: #00aaff;
+  border: 1px solid rgb(0, 187, 212);
+  border-radius: 8px;
+  color: rgb(0, 187, 212);
   text-align: center;
   text-decoration: none;
   font-weight: bold;
+}
+
+.section10-card.active .wrapS10Details{
+  display: block;
+}
+.section10-card.active .wrap-card-inner{
+  display: none;
 }
 .section10-card.active{
   flex: 2;
@@ -1337,6 +1364,12 @@ transform: rotate(0);
 
 
 /*  */
+@media screen and (max-width:1115px){
+  .section10-card-inner{
+    padding: 0;
+  }
+  
+}
 
 @media screen and (max-width:840px){
   .arrowGroup {
@@ -1353,8 +1386,68 @@ transform: rotate(0);
   }
   
 }
+@media screen and (max-width:641px){
+  .section10-detail{
+    flex-direction: column;
+  }
+  .section10-detail img{
+    width: 100%;
+  }
+  .header-books{
+    flex-direction: column;
+  }
+  .TitleS10{
+    font-size: 35px;
+  }
+  .group-text-books span{
+    font-size: 18px;
+  }
+  .group-nav-s10 a{
+    font-size: 16px;
+  }
+  .bg-back-s10{
+    width: 100%;
+  }
+  .mainCt-s10{
+    padding: 0;
+    width: 90%;
+  }
+  .group-item-s10{
+    justify-content: center;
+  }
+  
+}
 
   @media screen and (max-width: 1024px){
+
+    /* books */
+    .section10-cards{
+      flex-direction: column;
+    }
+    .section10-card-inner{
+      border-radius: 24px;
+      width: 90%;
+      padding: 15px;
+      writing-mode: unset;
+    }
+    .section10-card{
+      padding: 10px 0;
+      transform: rotate(0);
+    }
+    .wrap-card-inner{
+      padding: 10px;
+      width: 90%;
+    }
+    .section10-detail{
+      width: auto;
+      align-items: center;
+    }
+    .section10-detail img{
+      border-radius: 30px;
+    }
+
+    /*  */
+
   
     .section__8{
       flex-direction: column;
