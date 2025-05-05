@@ -11,27 +11,67 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
-    <header>     
-        <div class="nav-bar">
-            <button class="menu-button">
-                <i class="bi bi-list"></i>
-            </button>
-            <div class="logo"><a href=""><img src="img/logoNav-blog.png" alt=""></a></div>
+    <div class="side-bar hidden">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="literatureCourse.html">Careers</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="search.html">About us</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="login.html">Register</a></li>
         
-        <ul class="navs">
-            <li><a href="">Home</a></li>
-            <li><a href="">Courses</a></li>
-            <li><a href="">Careers</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">About us</a></li>
-            <li><div class="wrapAva"><img class="avartarNavbar" src="img/home-headerBanner.png" alt=""></div><span class="nameAva">Lina</span><img class="down" src="img/chevron-down.png" alt=""></a></li>
         </ul>
-            </div>
-     
+      </div>
+    <header>     
+            <div class="nav-bar">
+                <label style="color: black;" class="menu-button">
+                    <i class="bi bi-list"></i>
+                  </label>
+                <div class="logo"><a href="home.html"><img src="img/logoNav-blog.png" alt=""></a></div>
+            
+            <ul class="navs">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="literatureCourse.html">Careers</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="search.html">About us</a></li>
+                <li class="dropdown-container">
+                    <div class="wrapAva">
+                      <img class="avartarNavbar" src="img/home-headerBanner.png" alt="">
+                    </div>
+                    <span class="nameAva">Lina</span>
+                    <img class="down" src="img/chevron-down.png" alt="">
+                  
+                    <ul class="dropdown-menu hidden">
+
+                     
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="blogDetail.html">Blog Detail</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                        <li><a href="course.html">Courses</a></li>
+                        <li><a href="courseCalendar.html">Course Calendar</a></li>
+                        <li><a href="courseCalendarCreate1.html">Create Calendar 1</a></li>
+                        <li><a href="courseCalendarCreate2.html">Create Calendar 2</a></li>
+                        <li><a href="courseDetails.html">Course Details</a></li>
+                        <li><a href="CourseFullView.html">Course Full View</a></li>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="literatureCourse.html">Literature Course</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="meeting.html">Meeting</a></li>
+                        <li><a href="memberShip.html">Membership</a></li>
+                        <li><a href="search.html">Search</a></li>
+                        
+                
+                    </ul>
+                  </li>
+            </ul>
+                </div>
+         
 
 
-             <!--  -->
-</header>
+                 <!--  -->
+    </header>
 <div class="imgHeader">
 </div>
 <div class="boxContent">
@@ -188,5 +228,6 @@
             },
         });
       </script>
+      <script src="js/navbar.js"></script>
 </body>
 </html>

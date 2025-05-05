@@ -9,11 +9,11 @@ section{
 .section__1{
     width: 100%;
     background: rgb(235, 245, 255);
-    margin-top: 10px;
+  
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0;
+    padding-bottom: 50px;
 }
 .wrapCtS1{
     width: 90%;
@@ -25,6 +25,7 @@ section{
     margin-bottom: 40px;
 }
 .headerS1 h2{
+  padding: 10px 0;
     font-size: 36px;
     font-weight: 600;
     color: rgba(37, 38, 65, 1);
@@ -197,7 +198,7 @@ section{
 .imgHeaderS4{
     width: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 .groupInfoS4{
     color: #696984;
@@ -205,6 +206,7 @@ section{
     justify-content: space-between;
     font-size: 14px;
     font-weight: 500;
+    margin-top: 8px;
 
 }
 .category {
@@ -385,7 +387,7 @@ section{
 
     }
     .titleS3{
-      font-size: 26px;
+      font-size: 24px;
     }
     .section__5 {
       margin-top: 0;

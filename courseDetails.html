@@ -11,27 +11,67 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
-    <header>     
-        <div class="nav-bar">
-            <button class="menu-button">
-                <i class="bi bi-list"></i>
-            </button>
-            <div class="logo"><a href=""><img src="img/logoNav-blog.png" alt=""></a></div>
+    <div class="side-bar hidden">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="literatureCourse.html">Careers</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="search.html">About us</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="login.html">Register</a></li>
         
-        <ul class="navs">
-            <li><a href="">Home</a></li>
-            <li><a href="">Courses</a></li>
-            <li><a href="">Careers</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">About us</a></li>
-            <li><div class="wrapAva"><img class="avartarNavbar" src="img/home-headerBanner.png" alt=""></div><span class="nameAva">Lina</span><img class="down" src="img/chevron-down.png" alt=""></a></li>
         </ul>
-            </div>
-     
+      </div>
+    <header>     
+            <div class="nav-bar">
+                <label style="color: black;" class="menu-button">
+                    <i class="bi bi-list"></i>
+                  </label>
+                <div class="logo"><a href="home.html"><img src="img/logoNav-blog.png" alt=""></a></div>
+            
+            <ul class="navs">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="literatureCourse.html">Careers</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="search.html">About us</a></li>
+                <li class="dropdown-container">
+                    <div class="wrapAva">
+                      <img class="avartarNavbar" src="img/home-headerBanner.png" alt="">
+                    </div>
+                    <span class="nameAva">Lina</span>
+                    <img class="down" src="img/chevron-down.png" alt="">
+                  
+                    <ul class="dropdown-menu hidden">
+
+                     
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="blogDetail.html">Blog Detail</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                        <li><a href="course.html">Courses</a></li>
+                        <li><a href="courseCalendar.html">Course Calendar</a></li>
+                        <li><a href="courseCalendarCreate1.html">Create Calendar 1</a></li>
+                        <li><a href="courseCalendarCreate2.html">Create Calendar 2</a></li>
+                        <li><a href="courseDetails.html">Course Details</a></li>
+                        <li><a href="CourseFullView.html">Course Full View</a></li>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="literatureCourse.html">Literature Course</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="meeting.html">Meeting</a></li>
+                        <li><a href="memberShip.html">Membership</a></li>
+                        <li><a href="search.html">Search</a></li>
+                        
+                
+                    </ul>
+                  </li>
+            </ul>
+                </div>
+         
 
 
-             <!--  -->
-</header>
+                 <!--  -->
+    </header>
 <div class="content">
     <div class="HeadBanner">
         <img src="img/bannerCourseDetails.jfif" alt="">
@@ -136,7 +176,7 @@
                 <span class="sale">50% off</span>
             </div>
             <h4 class="timeLeft">11 hour left at this price</h4>
-            <a class="BuyBtn" href="">Buy Now</a>
+            <a class="BuyBtn" href="memberShip.html">Buy Now</a>
             <hr class="horizontalRaw">
             <h4 class="courseTitle">This Course included</h4>
             <ul class="listFeature">
@@ -166,12 +206,12 @@
         <div class="wrapCtS2">
             <div class="headerS3">
                 <h5 class="titleS3">Marketing Articles</h5>
-                <a href="">see all</a>
+                <a href="course.html">see all</a>
             </div>
          
             <div class="wrapItemS4">
                 <div class="cardItemS4-course">
-                    <a href="" class="navigatePage">
+                    <a href="courseDetails.html" class="navigatePage">
                         <img class="imgHeaderS4" src="img/img1-s4-blog.png" alt="">
                         <div class="groupInfoS4">
                                        <div class="category">
@@ -200,7 +240,7 @@
         
                 </div>
                 <div class="cardItemS4-course">
-                    <a href="" class="navigatePage">
+                    <a href="courseDetails.html" class="navigatePage">
                         <img class="imgHeaderS4" src="img/img2-s4-blog.png" alt="">
                         <div class="groupInfoS4">
                                        <div class="category">
@@ -229,7 +269,7 @@
         
                 </div>
                 <div class="cardItemS4-course">
-                    <a href="" class="navigatePage">
+                    <a href="courseDetails.html" class="navigatePage">
                         <img class="imgHeaderS4" src="img/s1-blog.png" alt="">
                         <div class="groupInfoS4">
                                        <div class="category">
@@ -258,7 +298,7 @@
         
                 </div>
                 <div class="cardItemS4-course">
-                    <a href="" class="navigatePage">
+                    <a href="courseDetails.html" class="navigatePage">
                         <img class="imgHeaderS4" src="img/img1-s4-blog.png" alt="">
                         <div class="groupInfoS4">
                                        <div class="category">
@@ -302,7 +342,7 @@
               <p>
                 TOTC's school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.
               </p>
-              <a href="#">Learn more</a>
+              <a href="blogDetail.html">Learn more</a>
             </div>
           
             <div class="image-wrapper">
@@ -316,7 +356,7 @@
     <section class="section__4">
         <div class="headerS3">
             <h5 class="titleS3">Top  Education offers and deals are listed here</h5>
-            <a href="">see all</a>
+            <a href="course.html">see all</a>
         </div>
         <div class="groupBox-s4">
             <div class="box">
@@ -364,5 +404,6 @@
     <p class="cpr">© 2021 Class Technologies Inc. </p>
     
 </footer>
+<script src="js/navbar.js"></script>
 </body>
 </html>

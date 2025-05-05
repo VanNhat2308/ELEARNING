@@ -304,7 +304,7 @@ section{
 .imgHeaderS4{
     width: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 .groupInfoS4{
     color: #696984;
@@ -704,4 +704,18 @@ align-items: unset;
         font-size: 23px;
         margin-bottom: 0;
     }
+  }
+  @media screen and (max-width:1304px){
+    .progressBar{
+        min-width: 200px;    
+    }
+  }
+  @media (min-width:1024px) and (max-width:1140px){
+    .dola-minus{
+        font-size: 14px;
+    }
+    .sale{
+        font-size: 14px;
+    }
+
   }

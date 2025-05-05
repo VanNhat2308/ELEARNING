@@ -12,20 +12,60 @@
     <link rel="stylesheet" href="css/all.css">
 </head>
 <body>
+    <div class="side-bar hidden">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="literatureCourse.html">Careers</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="search.html">About us</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="login.html">Register</a></li>
+        
+        </ul>
+      </div>
     <header>     
             <div class="nav-bar">
-                <button class="menu-button">
+                <label style="color: black;" class="menu-button">
                     <i class="bi bi-list"></i>
-                </button>
-                <div class="logo"><a href=""><img src="img/logoNav-blog.png" alt=""></a></div>
+                  </label>
+                <div class="logo"><a href="home.html"><img src="img/logoNav-blog.png" alt=""></a></div>
             
             <ul class="navs">
-                <li><a href="">Home</a></li>
-                <li><a href="">Courses</a></li>
-                <li><a href="">Careers</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">About us</a></li>
-                <li><div class="wrapAva"><img class="avartarNavbar" src="img/home-headerBanner.png" alt=""></div><span class="nameAva">Lina</span><img class="down" src="img/chevron-down.png" alt=""></a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="literatureCourse.html">Careers</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="search.html">About us</a></li>
+                <li class="dropdown-container">
+                    <div class="wrapAva">
+                      <img class="avartarNavbar" src="img/home-headerBanner.png" alt="">
+                    </div>
+                    <span class="nameAva">Lina</span>
+                    <img class="down" src="img/chevron-down.png" alt="">
+                  
+                    <ul class="dropdown-menu hidden">
+
+                     
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="blogDetail.html">Blog Detail</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                        <li><a href="course.html">Courses</a></li>
+                        <li><a href="courseCalendar.html">Course Calendar</a></li>
+                        <li><a href="courseCalendarCreate1.html">Create Calendar 1</a></li>
+                        <li><a href="courseCalendarCreate2.html">Create Calendar 2</a></li>
+                        <li><a href="courseDetails.html">Course Details</a></li>
+                        <li><a href="CourseFullView.html">Course Full View</a></li>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="literatureCourse.html">Literature Course</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="meeting.html">Meeting</a></li>
+                        <li><a href="memberShip.html">Membership</a></li>
+                        <li><a href="search.html">Search</a></li>
+                        
+                
+                    </ul>
+                  </li>
             </ul>
                 </div>
          
@@ -40,7 +80,7 @@
           <span class="byCap">By Themadbrains in <span style="color: var(--primary-color);">inspiration</span></span>
           <h2 class="sec1Title">Why Swift UI Should Be on the Radar of Every Mobile Developer</h2>
           <div class="captionS1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod tempor</div>
-          <a class="btnStartLearn" href="#">Start learning now</a>
+          <a class="btnStartLearn" href="checkout.html">Start learning now</a>
           </div>
           <div class="wrapImgS1">
             <img src="img/s1-blog.png" alt="">
@@ -79,7 +119,7 @@
             <div class="wrapItemS3">
             <div class="headerS3">
                 <h5 class="titleS3">Related Blog </h5>
-                <a href="">see all</a>
+                <a href="course.html">see all</a>
             </div>
             <!-- swiper -->
              <!-- Wrapper -->
@@ -96,7 +136,7 @@
         Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...
       </div>
       <div class="infoSlide">
-        <a href="">Read more</a>
+        <a href="blogDetail.html">Read more</a>
         <div class="groupInfoSlide">
             <img src="img/eye.png" alt="">
             <span>251,232</span>
@@ -114,7 +154,7 @@
         Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...
       </div>
       <div class="infoSlide">
-        <a href="">Read more</a>
+        <a href="blogDetail.html">Read more</a>
         <div class="groupInfoSlide">
             <img src="img/eye.png" alt="">
             <span>251,232</span>
@@ -132,7 +172,7 @@
         Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...
       </div>
       <div class="infoSlide">
-        <a href="">Read more</a>
+        <a href="blogDetail.html">Read more</a>
         <div class="groupInfoSlide">
             <img src="img/eye.png" alt="">
             <span>251,232</span>
@@ -158,119 +198,123 @@
         <section class="section__4">
             <div class="headerS3">
                 <h5 class="titleS3">Marketing Articles</h5>
-                <a href="">see all</a>
+                <a href="course.html">see all</a>
             </div>
             <div class="wrapItemS4">
                 <div class="cardItemS4">
-                    <img class="imgHeaderS4" src="img/img1-s4-blog.png" alt="">
-                    <div class="groupInfoS4">
-                   <div class="category">
-                    <img src="img/category.png" alt="">
-                    <span>design</span>
-                   </div>
-                   <div class="duration">
-                    <img src="img/timer.png" alt="">
-                    <span>3 Month</span>
-                   </div>
-                    </div>
-                    <h2 class="titleCardS4">AWS Certified solutions Architect</h2>
-                    <p class="captionS4">
-                        Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
-                    </p>
-                    <div class="wrapPrice">
-                        <div class="wrapLogoSlide">
-                            <div class="wrapAva" style="margin-right: 10px;"><img  class="avartarNavbar" src="img/home-headerBanner.png" alt=""></div><span class="nameAva">Lina</span>  
+                    <a href="courseDetails.html" class="navigatePage">
+                        <img class="imgHeaderS4" src="img/img1-s4-blog.png" alt="">
+                        <div class="groupInfoS4">
+                                           <div class="category">
+                        <img src="img/category.png" alt="">
+                        <span>design</span>
+                                           </div>
+                                           <div class="duration">
+                        <img src="img/timer.png" alt="">
+                        <span>3 Month</span>
+                                           </div>
                         </div>
-                        <div class="price">
-                            <span>$100</span>
-                            <span>$80</span>
+                        <h2 class="titleCardS4">AWS Certified solutions Architect</h2>
+                        <p class="captionS4">
+                            Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
+                        </p>
+                        <div class="wrapPrice">
+                            <div class="wrapLogoSlide">
+                                <div class="wrapAva" style="margin-right: 10px;"><img  class="avartarNavbar" src="img/home-headerBanner.png" alt=""></div><span class="nameAva">Lina</span>
+                            </div>
+                            <div class="price">
+                                <span>$100</span>
+                                <span>$80</span>
+                            </div>
                         </div>
-
-                    </div>
-
-                </div>
-                <div class="cardItemS4">
-                    <img class="imgHeaderS4" src="img/img2-s4-blog.png" alt="">
-                    <div class="groupInfoS4">
-                   <div class="category">
-                    <img src="img/category.png" alt="">
-                    <span>design</span>
-                   </div>
-                   <div class="duration">
-                    <img src="img/timer.png" alt="">
-                    <span>3 Month</span>
-                   </div>
-                    </div>
-                    <h2 class="titleCardS4">AWS Certified solutions Architect</h2>
-                    <p class="captionS4">
-                        Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
-                    </p>
-                    <div class="wrapPrice">
-                        <div class="wrapLogoSlide">
-                            <div class="wrapAva" style="margin-right: 10px;"><img  class="avartarNavbar" src="img/home-headerBanner.png" alt=""></div><span class="nameAva">Lina</span>  
-                        </div>
-                        <div class="price">
-                            <span>$100</span>
-                            <span>$80</span>
-                        </div>
-
-                    </div>
+                    </a>
 
                 </div>
                 <div class="cardItemS4">
-                    <img class="imgHeaderS4" src="img/s1-blog.png" alt="">
-                    <div class="groupInfoS4">
-                   <div class="category">
-                    <img src="img/category.png" alt="">
-                    <span>design</span>
-                   </div>
-                   <div class="duration">
-                    <img src="img/timer.png" alt="">
-                    <span>3 Month</span>
-                   </div>
-                    </div>
-                    <h2 class="titleCardS4">AWS Certified solutions Architect</h2>
-                    <p class="captionS4">
-                        Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
-                    </p>
-                    <div class="wrapPrice">
-                        <div class="wrapLogoSlide">
-                            <div class="wrapAva" style="margin-right: 10px;"><img  class="avartarNavbar" src="img/home-headerBanner.png" alt=""></div><span class="nameAva">Lina</span>  
+                    <a href="courseDetails.html" class="navigatePage">
+                        <img class="imgHeaderS4" src="img/img2-s4-blog.png" alt="">
+                        <div class="groupInfoS4">
+                                           <div class="category">
+                        <img src="img/category.png" alt="">
+                        <span>design</span>
+                                           </div>
+                                           <div class="duration">
+                        <img src="img/timer.png" alt="">
+                        <span>3 Month</span>
+                                           </div>
                         </div>
-                        <div class="price">
-                            <span>$100</span>
-                            <span>$80</span>
+                        <h2 class="titleCardS4">AWS Certified solutions Architect</h2>
+                        <p class="captionS4">
+                            Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
+                        </p>
+                        <div class="wrapPrice">
+                            <div class="wrapLogoSlide">
+                                <div class="wrapAva" style="margin-right: 10px;"><img  class="avartarNavbar" src="img/home-headerBanner.png" alt=""></div><span class="nameAva">Lina</span>
+                            </div>
+                            <div class="price">
+                                <span>$100</span>
+                                <span>$80</span>
+                            </div>
                         </div>
-
-                    </div>
+                    </a>
 
                 </div>
                 <div class="cardItemS4">
-                    <img class="imgHeaderS4" src="img/img4-s4-blog.png" alt="">
-                    <div class="groupInfoS4">
-                   <div class="category">
-                    <img src="img/category.png" alt="">
-                    <span>design</span>
-                   </div>
-                   <div class="duration">
-                    <img src="img/timer.png" alt="">
-                    <span>3 Month</span>
-                   </div>
-                    </div>
-                    <h2 class="titleCardS4">AWS Certified solutions Architect</h2>
-                    <p class="captionS4">
-                        Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
-                    </p>
-                    <div class="wrapPrice">
-                        <div class="wrapLogoSlide">
-                            <div class="wrapAva" style="margin-right: 10px;"><img  class="avartarNavbar" src="img/home-headerBanner.png" alt=""></div><span class="nameAva">Lina</span>  
+                    <a href="courseDetails.html" class="navigatePage">
+                        <img class="imgHeaderS4" src="img/s1-blog.png" alt="">
+                        <div class="groupInfoS4">
+                                           <div class="category">
+                        <img src="img/category.png" alt="">
+                        <span>design</span>
+                                           </div>
+                                           <div class="duration">
+                        <img src="img/timer.png" alt="">
+                        <span>3 Month</span>
+                                           </div>
                         </div>
-                        <div class="price">
-                            <span>$100</span>
-                            <span>$80</span>
+                        <h2 class="titleCardS4">AWS Certified solutions Architect</h2>
+                        <p class="captionS4">
+                            Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
+                        </p>
+                        <div class="wrapPrice">
+                            <div class="wrapLogoSlide">
+                                <div class="wrapAva" style="margin-right: 10px;"><img  class="avartarNavbar" src="img/home-headerBanner.png" alt=""></div><span class="nameAva">Lina</span>
+                            </div>
+                            <div class="price">
+                                <span>$100</span>
+                                <span>$80</span>
+                            </div>
                         </div>
+                    </a>
 
-                    </div>
+                </div>
+                <div class="cardItemS4">
+                    <a href="courseDetails.html" class="navigatePage">
+                        <img class="imgHeaderS4" src="img/img4-s4-blog.png" alt="">
+                        <div class="groupInfoS4">
+                                           <div class="category">
+                        <img src="img/category.png" alt="">
+                        <span>design</span>
+                                           </div>
+                                           <div class="duration">
+                        <img src="img/timer.png" alt="">
+                        <span>3 Month</span>
+                                           </div>
+                        </div>
+                        <h2 class="titleCardS4">AWS Certified solutions Architect</h2>
+                        <p class="captionS4">
+                            Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
+                        </p>
+                        <div class="wrapPrice">
+                            <div class="wrapLogoSlide">
+                                <div class="wrapAva" style="margin-right: 10px;"><img  class="avartarNavbar" src="img/home-headerBanner.png" alt=""></div><span class="nameAva">Lina</span>
+                            </div>
+                            <div class="price">
+                                <span>$100</span>
+                                <span>$80</span>
+                            </div>
+                        </div>
+                    </a>
 
                 </div>
               
@@ -298,6 +342,7 @@
         <p class="cpr">© 2021 Class Technologies Inc. </p>
         
     </footer>
+    <script src="js/navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
