@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
+.addedItem{
+  display: none;
+  width: 90%;
+}
+.section__8.itemPlus{
+  width: 100%;
+  
+}
+.bannerS6_img{
+  width: 100%;
+  height: auto;
+}
 .nav-bar ul li a {
   color: white;
 }
@@ -753,7 +763,7 @@ section{
   height: 200px;
   position: absolute;
   border-radius: 50%;
-  bottom: 0;
+  bottom: 15%;
   right: -8%;
   transform: translateY(40%);
   background: rgba(91, 97, 235, 1);
@@ -764,13 +774,13 @@ section{
   height: 25px;
   position: absolute;
   border-radius: 50%;
-  bottom: -10%;
+  bottom: 0;
   right: 30%;
   background: rgba(245, 102, 102, 1);
   z-index: -1;
 }
 .classroom-ui__heading {
-  font-size: 36px;
+  font-size:40px;
   font-weight: 600;
   color: rgba(47, 50, 125, 1);
 }
@@ -811,8 +821,8 @@ section{
 }
 
 .feature__text {
-  color: #555;
-  font-size: 18px;
+  color: #696984;
+  font-size: 22px;
   font-weight: 400;
 }
 
@@ -838,7 +848,7 @@ section{
 }
 .imgS6{
   position: relative;
-  width: 40%;
+  width: 45%;
 }
 .dotBg{
   position: absolute;
@@ -954,6 +964,7 @@ margin-top: 50px;
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 10px;
+  width: 354px;
 }
 .section__7 .textWrapper p{
   font-size: 22px;
@@ -1701,7 +1712,7 @@ color: #00BCD4;
     font-size: 35px;
   }
   .caption_s11{
-    font-size: 18px;
+    font-size: 16px;
   }
   .writeBtn_s11{
     font-size: 16px;
@@ -1755,7 +1766,11 @@ color: #00BCD4;
   
 }
   @media screen and (max-width: 1024px){
+    .section__7 .textWrapper h2{
+      width: 100%;
+    }
     /* s12 */
+    
     .news-grid{
       grid-template-columns: 1fr;
     }
@@ -1847,7 +1862,7 @@ color: #00BCD4;
       margin-bottom: 50px;
     }
     .imgS6{
-      width: 60%;
+      width: 100%;
     }
 
     .text-content{
@@ -1951,11 +1966,14 @@ color: #00BCD4;
     
   }
   @media screen and (max-width:767px){
+    .seeMore a{
+      font-size: 16px;
+    }
     .textWrapperS8 h2{
-      font-size: 25px;
+      font-size: 26px;
     }
     .textWrapperS8 p{
-      font-size: 18px;
+      font-size: 20px;
     }
     .wrapTextS9 h2{
       font-size: 25px;
@@ -2005,20 +2023,20 @@ color: #00BCD4;
       display: none;
      }
     .captionBoxS3 h2{
-        font-size: 28px;
+        font-size: 26px;
         padding-bottom: 10px;
     }
     .captionBoxS3 p{
         font-size: 16px;
     }
     .titleSec2{
-        font-size: 28px;
+        font-size: 26px;
     }
     .captionSec2{
-        font-size: 14px;
+        font-size: 16px;
     }
     .titleSec4{
-        font-size: 28px;
+        font-size: 26px;
     }
     .captionSec4{
         font-size: 16px;
@@ -2040,10 +2058,10 @@ color: #00BCD4;
         font-size: 12px;
     }
     .success h2{
-        font-size: 28px;
+        font-size: 26px;
     }
     .success p{
-        font-size: 14px;
+        font-size: 16px;
     }
     .stats {
       flex-direction: column;
@@ -2079,6 +2097,53 @@ color: #00BCD4;
     
   }
   @media screen and (max-width:456px){
+    .news-content h3{
+      font-size: 23px;
+    }
+    .news-content p{
+      font-size: 16px;
+      line-height: unset;
+    }
+    .news-content a{
+      font-size: 16px;
+    }
+    .section__12 .section-header h2{
+      font-size: 26px;
+    }
+    .section__12 .section-header p{
+      font-size: 16px;
+    }
+    .captionSec4{
+      font-size: 16px;
+    }
+    .textS6 h2{
+      font-size: 23px;
+    }
+    .textS6 p{
+      font-size: 16px;
+    }
+    .section__7 .textWrapper h2{
+      font-size: 23px;
+    }
+    .section__7 .textWrapper p{
+      font-size: 16px;
+    }
+    .textWrapperS8 h2{
+      font-size: 23px;
+    }
+    .textWrapperS8 p{
+      font-size: 16px;
+    }
+    .wrapTextS9 h2{
+      font-size: 23px;
+    }
+    .wrapTextS9 p{
+      font-size: 16px;
+    }
+
+    .feature__text{
+      font-size: 16px;
+    }
     .classroom-ui__heading{
       font-size: 23px;
     }
@@ -2118,15 +2183,18 @@ color: #00BCD4;
     }
    
     .text-content h2{
-      font-size: 26px;
+      font-size: 23px;
     }
     .text-content p{
-      font-size: 20px;
+      font-size: 16px;
     }
     .selec h4{
       font-size: 24px;
     }
     .selec a{
+      font-size: 16px;
+    }
+    .text-content a{
       font-size: 16px;
     }
     .card_item{
